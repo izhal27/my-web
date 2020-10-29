@@ -1,0 +1,25 @@
+body {
+  background-color: #24292e;
+}
+
+main {
+  height: 100vh;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
+a:not(:last-child) {
+  margin-right: 1em;
+}
+
+.icon {
+  font-size: 2em;
+  color: #888;
+}
+
+.icon:hover {
+  color: #fff;
+}
