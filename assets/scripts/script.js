@@ -41,7 +41,7 @@ const items = [
 const renderedItems = items
   .map(
     item => `
-    <a href="${item.link}">
+    <a href="${item.link}" target="_blank">
       <div class="faa-parent animated-hover icon">
       <i class="fa ${item.icon} faa-tada" aria-hidden="true"></i>
       </div>
