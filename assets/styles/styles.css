@@ -11,6 +11,12 @@ a {
   text-decoration: none;
 }
 
+.typing a:hover {
+  cursor: default;
+  text-decoration: none;
+  color: #fff;
+}
+
 a:not(:last-child) {
   margin-right: 1em;
 }
