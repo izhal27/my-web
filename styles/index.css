@@ -1,0 +1,22 @@
+@tailwind base;
+
+/* Write your own custom base styles here */
+
+/* Start purging... */
+@tailwind components;
+/* Stop purging. */
+
+/* Write you own custom component styles here */
+
+/* Start purging... */
+@tailwind utilities;
+/* Stop purging. */
+
+/* Your own custom utilities */
+@layer utilities {
+  @variants responsive {
+    .active {
+      border-bottom: 2px solid rgba(30, 58, 138, var(--tw-text-opacity));
+    }
+  }
+}
