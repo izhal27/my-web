@@ -1,11 +1,10 @@
 {
-  "name": "blog-starter",
+  "name": "izhal.web.id",
   "version": "1.0.0",
   "scripts": {
     "dev": "next",
     "build": "next build && next export",
-    "start": "next start",
-    "build:export": "bash -c 'rm -fr ../izhal.github.io/{404.html,_next,index.html,posts} && npm run build && cp -a .next/. ../izhal.github.io'"
+    "start": "next start"
   },
   "dependencies": {
     "classnames": "2.2.6",
