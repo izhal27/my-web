@@ -5,6 +5,7 @@ import HeroPost from '../components/hero-post';
 import Intro from '../components/intro';
 import Layout from '../components/layout';
 import { getAllPosts, getWelcomePost } from '../lib/api';
+import { BLOG_NAME, HOME_OG_IMAGE_URL } from '../lib/constants';
 
 export default function Index({ welcomePost, allPosts }) {
   const heroPost = welcomePost;
@@ -13,7 +14,8 @@ export default function Index({ welcomePost, allPosts }) {
     <>
       <Layout>
         <Head>
-          <title>IzHaL Blog</title>
+          <title>{BLOG_NAME}</title>
+          <meta property="og:image" content={HOME_OG_IMAGE_URL} />
         </Head>
         <Container>
           <Intro />

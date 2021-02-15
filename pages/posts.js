@@ -3,6 +3,7 @@ import Container from '../components/container';
 import Layout from '../components/layout';
 import ListPosts from '../components/list-posts';
 import { getAllPosts } from '../lib/api';
+import { BLOG_NAME, HOME_OG_IMAGE_URL } from '../lib/constants';
 
 export default function Posts({ allPosts }) {
   const morePosts = allPosts;
@@ -10,7 +11,8 @@ export default function Posts({ allPosts }) {
     <>
       <Layout>
         <Head>
-          <title>Posts</title>
+          <title>Posts | {BLOG_NAME}</title>
+          <meta property="og:image" content={HOME_OG_IMAGE_URL} />
         </Head>
         <Container>
           <ListPosts posts={morePosts} />

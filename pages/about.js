@@ -1,13 +1,15 @@
 import Head from 'next/head';
 import Container from '../components/container';
 import Layout from '../components/layout';
+import { BLOG_NAME, HOME_OG_IMAGE_URL } from '../lib/constants';
 
 export default function About() {
   return (
     <>
       <Layout>
         <Head>
-          <title>About</title>
+          <title>About | {BLOG_NAME}</title>
+          <meta property="og:image" content={HOME_OG_IMAGE_URL} />
         </Head>
         <Container>
           <div className="flex flex-col max-w-xl mx-auto">
