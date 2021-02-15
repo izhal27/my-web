@@ -8,6 +8,7 @@ import { getPostBySlug, getAllPosts } from '../../lib/api';
 import PostTitle from '../../components/post-title';
 import Head from 'next/head';
 import markdownToHtml from '../../lib/markdownToHtml';
+import { BLOG_NAME } from '../../lib/constants';
 
 export default function Post({ post }) {
   const router = useRouter();
@@ -26,7 +27,7 @@ export default function Post({ post }) {
             <article className="mb-32">
               <Head>
                 <title>
-                  {post.title} | IzHaL's Blog
+                  {post.title} | {BLOG_NAME}
                 </title>
                 <meta property="og:image" content={post.ogImage.url} />
               </Head>
