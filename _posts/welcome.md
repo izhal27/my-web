@@ -4,7 +4,7 @@ excerpt: 'Halo, Saya Risal Walangadi dan ini adalah Blog pribadi saya yang saya 
 coverImage:
   src: '/assets/blog/welcome/cover.jpg'
   external: true
-  name: Unsplash.com
+  name: Unsplash
   externalSrc: 'https://unsplash.com'
 date: '2021-02-14T08:15:00.012Z'
 author:
