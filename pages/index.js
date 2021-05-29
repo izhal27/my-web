@@ -16,6 +16,11 @@ export default function Index({ welcomePost, allPosts }) {
         <Head>
           <title>{BLOG_NAME}</title>
           <meta property="og:image" content={HOME_OG_IMAGE_URL} />
+          <script
+            data-ad-client="ca-pub-6164939995409982"
+            async
+            src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"
+          ></script>
         </Head>
         <Container>
           <Intro />
